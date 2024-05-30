@@ -72,10 +72,11 @@ header{
     align-items: center;
     padding-top: 40px;
 }
-header .navBar .links ul{
+header .navBar .links{
     display: flex;
+    align-items: center;
 }
-.navBar .links ul li{
+.navBar .links p{
     padding-right: 45px;
     font-size: 20px;
 }
@@ -88,4 +89,7 @@ p{
     font-size: 20px;
 }
 
+.bi-gear::before{
+    padding-right: 5px;
+}
 
