@@ -46,20 +46,23 @@ table {
 
 
 
-
-
-
-body{
-    background-image: url("images/fond.jpg");
-    background-size: cover;
-    font-family: "Poppins Medium";
-    font-weight: bold;
+html{
     width: 100%;
     height: 100%;
 }
 
+
+body{
+    font-family: "Poppins", serif;
+    background-image: url("images/fond.jpg");
+    background-size : cover;
+    font-weight: bold;
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+}
 header{
-    /*background-color: #ba2fba;*/
+    flex: 1;
     height: 100px;
     width: 100%;
     border-bottom-left-radius: 6px;
@@ -72,24 +75,54 @@ header{
     align-items: center;
     padding-top: 40px;
 }
+.navBar .logo span{
+    position: absolute;
+    top: 39px;
+    left: 20px;
+}
 header .navBar .links{
     display: flex;
     align-items: center;
 }
 .navBar .links p{
     padding-right: 45px;
-    font-size: 20px;
-}
 
+}
 .navBar .logo{
     padding-left: 45px;
 }
-
-p{
-    font-size: 20px;
+.bi::before{
+    padding-right: 7px;
+}
+.navBar .logo{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
-.bi-gear::before{
-    padding-right: 5px;
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-areas:
+        "content1 content2 content2"
+        "content1 content2 content2"
+        "footer footer footer";
+    gap: 0.3rem 1rem;
+}
+.aside{
+    
+    grid-area: content1;
+    background-color: blue;
+
+}
+.content{
+    grid-area: content2;
+    background-color: #666666;
 }
 
+footer{
+    grid-area: footer;
+    background-color: red;
+}
