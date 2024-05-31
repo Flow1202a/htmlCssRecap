@@ -112,17 +112,21 @@ main{
     gap: 0.3rem 1rem;
 }
 .aside{
-    
+    border-radius: 10px;
     grid-area: content1;
-    background-color: blue;
-
+    background: rgb(254,217,183);
+    background: linear-gradient(342deg, rgba(254,217,183,1) 49%, rgba(240,103,172,1) 100%);
 }
 .content{
+    border-radius: 10px;
     grid-area: content2;
-    background-color: #666666;
+    background: rgb(254,217,183);
+    background: linear-gradient(342deg, rgba(254,217,183,1) 41%, rgba(240,113,103,1) 100%);
 }
 
 footer{
+    border-radius: 10px;
     grid-area: footer;
-    background-color: red;
+    background: rgb(254,183,183);
+    background: linear-gradient(342deg, rgba(254,183,183,1) 61%, rgba(240,103,172,1) 100%);
 }
